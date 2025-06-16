@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Clone - Series</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="series.css">
+  <link rel="icon" href="Img/logo.png">
+</head>
+
+<body>
+  <ul class="ct-socials">
+    <li style="font-size:35px;">
+      <a href="https://www.linkedin.com/in/leethub-official" target="_blank"><i style="color: blue;"
+          class="fab fa-linkedin"></i></a>
+    </li>
+    <li style="font-size:35px;">
+      <a href="https://www.instagram.com/leethub_official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+        target="_blank"><i style="color: red;" class="fab fa-instagram"></i></a>
+    </li>
+    <li style="font-size:35px;">
+      <a href="https://github.com/Leet-Hub/Clones-By-Leet.git" target="_blank"><i style="color: purple;"
+          class="fab fa-github"></i></a>
+    </li>
+  </ul>
+  <div class="header">
+    <span class="logo">
+      <img src="Img/netflix-logo.png" alt="Netflix Logo">
+    </span>
+    <nav class="nav">
+      <a href="netflix.html">Home</a>
+      <a href="movie.html">Movies</a>
+      <a href="series.html" style="color: #e50914;">Series</a>
+      <a href="#">Popular</a>
+    </nav>
+    <span class="profile">
+      <a href="login.html"><img src="Img/netflix-profile-pictures.jpg" alt="Profile"
+          style="height:38px; border-radius:6px;"></a>
+    </span>
+  </div>
+
+  <main>
+    <section class="popular-streaming">
+      <h2 class="category-title">Series</h2>
+      <div class="filter-buttons">
+        <button class="filter-btn active">All Series</button>
+        <button class="filter-btn">Drama</button>
+        <button class="filter-btn">Comedy</button>
+        <button class="filter-btn">Action</button>
+        <button class="filter-btn">Thriller</button>
+        <button class="filter-btn">Sci-Fi</button>
+      </div>
+      <div class="category-list">
+        <div class="movie-item">
+          <img class="movie-thumb" src="Img/Poster/P12.jpeg" alt="Adventure 1" />
+          <div class="movie-info">
+            <span class="release-date">April 18</span>
+            <p>114 min | Adventure</p>
+          </div>
+        </div>
+        <div class="movie-item">
+          <img class="movie-thumb" src="Img/Poster/P13.jpeg" alt="Adventure 2" />
+          <div class="movie-info">
+            <span class="release-date">April 22</span>
+            <p>113 min | Adventure, Action</p>
+          </div>
+        </div>
+        <div class="movie-item">
+          <img class="movie-thumb" src="Img/Poster/P14.jpeg" alt="Adventure 3" />
+          <div class="movie-info">
+            <span class="release-date">May 4</span>
+            <p>110 min | Action</p>
+          </div>
+        </div>
+        <div class="movie-item">
+          <img class="movie-thumb" src="Img/Poster/P15.jpeg" alt="Adventure 4" />
+          <div class="movie-info">
+            <span class="release-date">May 12</span>
+            <p>111 min | Drama</p>
+          </div>
+        </div>
+        <div class="movie-item">
+          <img class="movie-thumb" src="Img/Poster/P16.jpg" alt="Adventure 5" />
+          <div class="movie-info">
+            <span class="release-date">June 9</span>
+            <p>120 min | Adventure</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sliding Image Show -->
+    <section class="image-slider">
+      <div class="slider-container">
+        <div class="slider-item">
+          <img src="Img/Poster/H1.avif" alt="Slider Image 1" class="slider-image">
+          <div class="slider-text">
+            <h1>Discover the Mystery</h1>
+            <div class="hero-meta">Trending in <span class="Web">Web series</span>
+            </div>
+            <p>Unravel the secrets behind the most thrilling series.</p>
+          </div>
+        </div>
+        <div class="slider-item">
+          <img src="Img/Poster/H2.jpg" alt="Slider Image 2" class="slider-image">
+          <div class="slider-text">
+            <h1>Action-Packed Adventures</h1>
+            <div class="hero-meta">Trending in <span class="Web">Web series</span>
+            </div>
+            <p>Experience the adrenaline rush with every episode.</p>
+          </div>
+        </div>
+        <div class="slider-item">
+          <img src="Img/Poster/H3.webp" alt="Slider Image 3" class="slider-image">
+          <div class="slider-text">
+            <h1>Heartwarming Stories</h1>
+            <div class="hero-meta">Trending in <span class="Web">Web series</span>
+            </div>
+            <p>Feel the emotions with stories that touch your soul.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <button class="prev-btn">&lt;</button>
+    <button class="next-btn">&gt;</button>
+    <!-- Auto Sliding Image Show -->
+
+    <section class="image-slider1">
+      <div class="slider-container1">
+        <div class="slider-item1">
+          <img src="Img/Poster/H1.jpeg" alt="Slider Image 1" class="slider-image1">
+          <div class="slider-text">
+            <h1>Discover the Mystery</h1>
+            <div class="hero-meta">Trending in <span class="Web">Web series</span></div>
+            <p>Unravel the secrets behind the most thrilling series.</p>
+          </div>
+        </div>
+        <div class="slider-item1">
+          <img src="Img/Poster/H2.jpeg" alt="Slider Image 2" class="slider-image1">
+          <div class="slider-text">
+            <h1>Action-Packed Adventures</h1>
+            <div class="hero-meta">Trending in <span class="Web">Web series</span></div>
+            <p>Experience the adrenaline rush with every episode.</p>
+          </div>
+        </div>
+        <div class="slider-item1">
+          <img src="Img/Poster/H3.jpeg" alt="Slider Image 3" class="slider-image1">
+          <div class="slider-text">
+            <h1>Heartwarming Stories</h1>
+            <div class="hero-meta">Trending in <span class="Web">Web series</span></div>
+            <p>Feel the emotions with stories that touch your soul.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Existing content -->
+
+    <section class="popular-streaming">
+      <div class="series-list">
+        <div class="series-item">
+          <img src="Img/Poster/H12.jpg" alt="Series 1">
+          <span class="release-date">April 22</span>
+        </div>
+        <div class="series-item">
+          <img src="Img/Poster/H2.jpeg" alt="Series 2">
+          <span class="release-date">May 15</span>
+        </div>
+        <div class="series-item">
+          <img src="Img/Poster/H3.jpeg" alt="Series 3">
+          <span class="release-date">June 5</span>
+        </div>
+        <div class="series-item">
+          <img src="Img/Poster/H4.jpeg" alt="Series 4">
+          <span class="release-date">July 10</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <div class="social-icons">
+    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.github.com" target="_blank" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </div>
+  <section class="link">
+    <div class="sub-links">
+      <ul>
+        <li><a href="#">Audio and Subtitles</a></li>
+        <li><a href="#">Information</a></li>
+        <li><a href="#">Gift Cards</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Legal Notices</a></li>
+        <li><a href="#">Help Center</a></li>
+
+      </ul>
+    </div>
+  </section>
+  <footer>
+    <p>&copy 1997-2025 Netflix, Inc. <a style="color: #e50914; padding-left: 10px;">Clone By Leet</a></p>
+  </footer>
+  <!-- Chat HTML Structure -->
+  <link rel="stylesheet" href="chat.css">
+  <!-- Chat Button -->
+  <button class="chat-button" onclick="toggleChat()">
+    <span style="font-size: 2rem; color: red; font-weight: bold;">N</span>
+  </button>
+  <!-- Chat Popup -->
+  <div class="chat-popup" id="chatPopup">
+    <div class="chat-header">Netflix Support</div>
+    <div class="chat-body" id="chatBody">
+      <p style="color: black;"><strong style="color: black;">Support : </strong> Hello! How can we help you ?</p>
+    </div>
+    <div class="chat-input" style="color: black;">
+      <input type="text" placeholder="Type a message..." id="chatInput" style="color: black;">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+  <script src="chat.js"></script>
+  <script src="netflix.js"></script>
+</body>
+
+</html>

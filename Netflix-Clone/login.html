@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="img/logo.png">
+    <title>Netflix Clone</title>
+
+</head>
+
+<body>
+    <div class="header">
+        <span class="logo">
+            <img src="Img/netflix-logo.png" alt="Netflix Logo">
+        </span>
+
+    </div>
+    <div class="login-div">
+        <form class="login">
+            <h1>Sign In</h1>
+            <div class="input-text">
+                <input type="text" id="inputEmail" name="email" placeholder="Email or phone number">
+                <div class="warning-input" id="warningEmail">
+                    Please enter a valid email or phone number.
+                </div>
+            </div>
+
+            <div class="input-text">
+                <input type="password" id="inputPassword" name="password" placeholder="Password">
+                <div class="warning-input" id="warningPassword">
+                    Your password must contain between 4 and 60 characters.
+                </div>
+            </div>
+
+            <div>
+                <button class="signin-button"> <a href="netflix.html" style="color: white; text-decoration: none;">Sign
+                        In</a></button>
+            </div>
+            <div class="remember-flex">
+                <div>
+                    <input type="checkbox">
+                    <label class="color_text">Remember me</label>
+                </div>
+                <div class="help">
+                    <a class="color_text" href="#">Need help?</a>
+                </div>
+            </div>
+            <div class="login-face">
+                <i class="fa-brands fa-facebook"
+                    style="font-size: 20px; color: blue; background-color: white; border-radius: 50px;"></i><a href="#"
+                    class="color_link log_face">Login with Facebook</a>
+            </div>
+            <div class="new-members">
+                New to Netflix? <a href="#" class="signup-link">Sign up now</a>.
+            </div>
+            <div class="protection color_link help">
+                This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a>
+            </div>
+        </form>
+    </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="chat.js"></script>
+    <!-- Chat HTML Structure -->
+    <link rel="stylesheet" href="chat.css">
+    <!-- Chat Button -->
+    <button class="chat-button" onclick="toggleChat()">
+        <span style="font-size: 2rem; color: red; font-weight: bold;">N</span>
+    </button>
+    <!-- Chat Popup -->
+    <div class="chat-popup" id="chatPopup">
+        <div class="chat-header">Netflix Support</div>
+        <div class="chat-body" id="chatBody">
+            <p style="color: black;"><strong style="color: black;">Support : </strong> Hello! How can we help you ?</p>
+        </div>
+        <div class="chat-input" style="color: black;">
+            <input type="text" placeholder="Type a message..." id="chatInput" style="color: black;">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</body>
+
+</html>
