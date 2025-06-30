@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Lakme - India's Leading Beauty Brand</title>
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Bootstrap Icons -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="./assets by Leet/style.css">
+      <!-- Lakme Favicon -->
+      <link rel="icon" type="image/png" href="https://images.seeklogo.com/logo-png/26/1/lakme-logo-png_seeklogo-262775.png">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <!-- Promotional Banner -->
+      <div class="promo-banner">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-12 text-center">
+                  <div id="promoCarousel" class="carousel slide d-inline-block" data-bs-ride="carousel"
+                     data-bs-interval="3500">
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <p class="mb-0">
+                              ₹500 OFF ON YOUR FIRST ORDER ABOVE ₹1499 USE CODE: <strong>LAKMEFIRST</strong>
+                           </p>
+                        </div>
+                        <div class="carousel-item">
+                           <p class="mb-0">
+                              FREE SHIPPING ON ORDER ABOVE ₹599
+                           </p>
+                        </div>
+                        <div class="carousel-item">
+                           <p class="mb-0">
+                              DEVELOP AND DESIGN BY <strong>LEET</strong>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <button type="button" class="btn-close promo-close" aria-label="Close"></button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Main Header -->
+      <header class="main-header">
+         <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid px-4">
+               <!-- Logo -->
+               <a class="navbar-brand mx-auto" href="index.html">
+               <img src="./img/Logo.avif"
+                  alt="LAKME" class="logo">
+               </a>
+               <!-- Right Icons -->
+               <div class="navbar-icons">
+                  <button class="nav-icon">
+                  <i class="bi bi-person"></i>
+                  </button>
+                  <button class="nav-icon">
+                  <i class="bi bi-bag"></i>
+                  </button>
+                  <!-- Search Icon -->
+                  <button class="navbar-search me-3">
+                  <i class="bi bi-search"></i>
+                  </button>
+               </div>
+            </div>
+         </nav>
+         <!-- Main Navigation -->
+         <nav class="main-nav">
+            <div class="container-fluid">
+               <ul class="nav justify-content-center">
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                     CATEGORIES
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Face</a></li>
+                        <li><a class="dropdown-item" href="#">Eyes</a></li>
+                        <li><a class="dropdown-item" href="#">Lips</a></li>
+                        <li><a class="dropdown-item" href="#">Nails</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item ">
+                     <a class="nav-link" href="trending-now.html">TRENDING NOW</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="trends.html">TRENDS</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                     ORDERS
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Track Order</a></li>
+                        <li><a class="dropdown-item" href="#">Order History</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                     HELP
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">FAQ</a></li>
+                        <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="wishlist.html">MY WISHLIST</a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+      <!-- Category Navigation -->
+      <nav class="category-nav">
+         <div class="container-fluid">
+            <ul class="nav justify-content-center">
+               <li class="nav-item border-end sale-border">
+                  <a class="nav-link" href="#">SALE</a>
+               </li>
+               <style>
+                  .sale-border {
+                  border-right: 2px solid #000000 !important;
+                  border-width: 1.5px !important;
+                  }
+               </style>
+               <li class="nav-item border-end sale-border">
+                  <a class="nav-link" href="#">SKIN</a>
+               </li>
+               <li class="nav-item border-end sale-border">
+                  <a class="nav-link" href="#">FACE</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link border-end sale-border" href="#">LIPS</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link border-end sale-border" href="#">EYES</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link border-end sale-border" href="#">NAILS</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <!-- Hero Section -->
+      <section>
+         <div id="beautyImageSlider" class="carousel slide image-carousel" data-bs-ride="carousel"
+            data-bs-interval="3000">
+            <!-- Carousel Inner -->
+            <div class="carousel-inner">
+               <!-- Slide 1 - Foundation -->
+               <div class="carousel-item active">
+                  <div class="image-slide">
+                     <img src="https://www.lakmeindia.com/cdn/shop/files/Hya-matte-foundation_-banner_1440x530_5303d2bb-3b0a-4e1d-957c-17e7374e9f9d_2200x.jpg?v=1748846747"
+                        alt="Beauty Product 1" class="slide-image">
+                  </div>
+               </div>
+               <!-- Slide 2 - Lipstick -->
+               <div class="carousel-item">
+                  <div class="image-slide">
+                     <img src="https://www.lakmeindia.com/cdn/shop/files/Bullet_Lipstick-HP-_Desktop_1_1_2200x.png?v=1748848294"
+                        alt="Beauty Product 2" class="slide-image">
+                  </div>
+               </div>
+               <!-- Slide 3 - Summer Ready -->
+               <div class="carousel-item">
+                  <div class="image-slide">
+                     <img src="http://lakmeindia.com/cdn/shop/files/Hya-matte-liq-lip_-banner_1440x530_53792b7c-90ba-4a1f-9ca4-baeacf30f624_2200x.jpg?v=1748846714"
+                        alt="Beauty Product 3" class="slide-image">
+                  </div>
+               </div>
+               <!-- Slide 4 - Skincare -->
+               <div class="carousel-item">
+                  <div class="image-slide">
+                     <img src="https://www.lakmeindia.com/cdn/shop/files/Retinol_HomePageBanners_Website_1440X530_1_1_x800.jpg?v=1748847131"
+                        alt="Beauty Product 4" class="slide-image">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- New Arrivals Section -->
+      <section class="new-arrivals-section py-5">
+         <div class="container">
+            <!-- Section Header -->
+            <div class="section-header mb-5">
+               <div class="trending-badge">TRENDING NOW</div>
+               <h2 class="section-title">NEW ARRIVALS</h2>
+               <div class="category-tabs">
+                  <button class="tab-btn active" data-category="makeup">MAKEUP</button>
+                  <button class="tab-btn" data-category="skincare">SKINCARE</button>
+               </div>
+            </div>
+            <!-- Products Grid -->
+            <div class="row g-4">
+               <!-- Product 1 - Lip Liquid -->
+               <div class="col-lg-3 col-md-6">
+                  <div class="product-card">
+                     <div class="product-badge">NEW</div>
+                     <div class="product-image">
+                        <img src="https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                           alt="Lakme 9to5 Hya Matte Lip Liquid" class="img-fluid">
+                        <div class="product-overlay">
+                           <div class="product-features">
+                              <span class="feature-text">WITH HYALURONIC ACID</span>
+                              <span class="feature-text">VITAMIN E</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="product-info">
+                        <h5 class="product-title">Lakme 9to5 Hya Matte Lip Liquid</h5>
+                        <div class="product-price">
+                           <span class="current-price">₹799</span>
+                        </div>
+                        <div class="product-shades">
+                           <span class="shades-text">10 Shades Available</span>
+                           <div class="shade-dots">
+                              <span class="shade-dot" style="background-color: #8B4B3B;"></span>
+                              <span class="shade-dot" style="background-color: #A0524A;"></span>
+                              <span class="shade-dot" style="background-color: #6B3428;"></span>
+                              <i class="bi bi-chevron-right shade-arrow"></i>
+                           </div>
+                        </div>
+                        <button class="buy-now-btn">
+                        BUY NOW <i class="bi bi-arrow-right"></i>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <!-- Product 2 - Foundation -->
+               <div class="col-lg-3 col-md-6">
+                  <div class="product-card">
+                     <div class="product-badge">NEW</div>
+                     <div class="product-image">
+                        <img src="https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                           alt="Lakme 9to5 Hya Matte Foundation + Hyaluronic Acid" class="img-fluid">
+                        <div class="product-overlay">
+                           <div class="product-features">
+                              <span class="feature-text">SPF 40</span>
+                              <span class="feature-text">24 HR MATTE</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="product-info">
+                        <h5 class="product-title">Lakme 9to5 Hya Matte Foundation + Hyaluronic Acid</h5>
+                        <div class="product-price">
+                           <span class="original-price">₹899</span>
+                           <span class="current-price">₹674</span>
+                        </div>
+                        <div class="product-shades">
+                           <span class="shades-text">20 Shades Available</span>
+                           <div class="shade-dots">
+                              <span class="shade-dot" style="background-color: #F4C2A1;"></span>
+                              <span class="shade-dot" style="background-color: #E8A882;"></span>
+                              <span class="shade-dot" style="background-color: #D4956B;"></span>
+                              <i class="bi bi-chevron-right shade-arrow"></i>
+                           </div>
+                        </div>
+                        <button class="buy-now-btn">
+                        BUY NOW <i class="bi bi-arrow-right"></i>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <!-- Product 3 - Lipstick -->
+               <div class="col-lg-3 col-md-6">
+                  <div class="product-card">
+                     <div class="product-badge">NEW</div>
+                     <div class="product-image">
+                        <img src="https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                           alt="Lakme 9to5 Hya Matte Lipstick" class="img-fluid">
+                        <div class="product-overlay">
+                           <div class="product-features">
+                              <span class="feature-text">HYALURONIC ACID</span>
+                              <span class="feature-text">SMUDGE PROOF</span>
+                              <span class="feature-text">UP TO 14 HRS</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="product-info">
+                        <h5 class="product-title">Lakme 9to5 Hya Matte Lipstick</h5>
+                        <div class="product-price">
+                           <span class="original-price">₹699</span>
+                           <span class="current-price">₹594</span>
+                        </div>
+                        <div class="product-shades">
+                           <span class="shades-text">24 Shades Available</span>
+                           <div class="shade-dots">
+                              <span class="shade-dot" style="background-color: #B85C4A;"></span>
+                              <span class="shade-dot" style="background-color: #D4524A;"></span>
+                              <span class="shade-dot" style="background-color: #C4485C;"></span>
+                              <i class="bi bi-chevron-right shade-arrow"></i>
+                           </div>
+                        </div>
+                        <button class="buy-now-btn">
+                        BUY NOW <i class="bi bi-arrow-right"></i>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <!-- Product 4 - Pressed Powder -->
+               <div class="col-lg-3 col-md-6">
+                  <div class="product-card">
+                     <div class="product-badge">NEW</div>
+                     <div class="product-image">
+                        <img src="https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                           alt="Lakme 9to5 Hya Matte Pressed Powder" class="img-fluid">
+                        <div class="product-overlay">
+                           <div class="product-features">
+                              <span class="feature-text">WITH HYALURONIC ACID</span>
+                              <span class="feature-text">OIL CONTROL</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="product-info">
+                        <h5 class="product-title">Lakme 9to5 Hya Matte Pressed Powder</h5>
+                        <div class="product-price">
+                           <span class="original-price">₹699</span>
+                           <span class="current-price">₹594</span>
+                        </div>
+                        <div class="product-shades">
+                           <span class="shades-text">8 Shades Available</span>
+                           <div class="shade-dots">
+                              <span class="shade-dot" style="background-color: #F5D5B8;"></span>
+                              <span class="shade-dot" style="background-color: #E8C4A0;"></span>
+                              <span class="shade-dot" style="background-color: #D4A882;"></span>
+                              <i class="bi bi-chevron-right shade-arrow"></i>
+                           </div>
+                        </div>
+                        <button class="buy-now-btn">
+                        BUY NOW <i class="bi bi-arrow-right"></i>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Try Before You Buy Section -->
+      <section class="try-before-buy-section py-5">
+         <div class="container">
+            <!-- Section Header -->
+            <div class="section-header text-start mb-5">
+               <h2 class="try-section-title">TRY BEFORE YOU BUY</h2>
+               <div class="try-tabs mb-4">
+                  <button class="try-tab-btn active" data-category="shade-match">SHADE MATCH</button>
+                  <button class="try-tab-btn" data-category="skin-analysis">SKIN ANALYSIS</button>
+                  <button class="try-tab-btn" data-category="lips">LIPS</button>
+                  <button class="try-tab-btn" data-category="looks">LOOKS</button>
+                  <button class="try-tab-btn" data-category="eyes">EYES</button>
+               </div>
+               <p class="try-subtitle">TRYING MAKEUP WAS NEVER THIS EASY</p>
+               <p class="try-description">Find your perfect shade and finish of foundation, concealer, contour and compact</p>
+            </div>
+            <!-- Try Features Grid -->
+            <div class="row g-4">
+               <!-- Feature 1 - Shade Match -->
+               <div class="col-lg-3 col-md-6">
+                  <div class="try-feature-card">
+                     <div class="try-feature-image">
+                        <img src="https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                           alt="Shade Match Feature" class="img-fluid">
+                        <div class="try-overlay">
+                           <div class="try-overlay-content">
+                              <i class="bi bi-palette2 try-icon"></i>
+                              <span class="try-overlay-text">PERFECT SHADE MATCHING</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="try-feature-info">
+                        <button class="learn-more-btn">
+                        LEARN MORE
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <!-- Feature 2 - Skin Analysis -->
+               <div class="col-lg-3 col-md-6">
+                  <div class="try-feature-card">
+                     <div class="try-feature-image">
+                        <img src="https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                           alt="Skin Analysis Feature" class="img-fluid">
+                        <div class="try-overlay">
+                           <div class="try-overlay-content">
+                              <i class="bi bi-search try-icon"></i>
+                              <span class="try-overlay-text">ADVANCED SKIN ANALYSIS</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="try-feature-info">
+                        <button class="learn-more-btn">
+                        LEARN MORE
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <!-- Feature 3 - Lip Try-On -->
+               <div class="col-lg-3 col-md-6">
+                  <div class="try-feature-card">
+                     <div class="try-feature-image">
+                        <img src="https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                           alt="Lip Try-On Feature" class="img-fluid">
+                        <div class="try-overlay">
+                           <div class="try-overlay-content">
+                              <i class="bi bi-heart try-icon"></i>
+                              <span class="try-overlay-text">VIRTUAL LIP TRY-ON</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="try-feature-info">
+                        <button class="learn-more-btn">
+                        LEARN MORE
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <!-- Feature 4 - Complete Looks -->
+               <div class="col-lg-3 col-md-6">
+                  <div class="try-feature-card">
+                     <div class="try-feature-image">
+                        <img src="https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                           alt="Complete Looks Feature" class="img-fluid">
+                        <div class="try-overlay">
+                           <div class="try-overlay-content">
+                              <i class="bi bi-stars try-icon"></i>
+                              <span class="try-overlay-text">COMPLETE MAKEUP LOOKS</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="try-feature-info">
+                        <button class="learn-more-btn">
+                        LEARN MORE
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Footer Section -->
+      <footer class="footer-section">
+         <div class="container">
+            <!-- Main Footer Content -->
+            <div class="footer-main">
+               <!-- Footer Logo and Partnership -->
+               <div class="footer-brand text-center mb-5">
+                  <div class="footer-logo">
+                     <img src="https://cdn.shopify.com/s/files/1/0014/3514/0183/files/Lkm1_2.png" alt="LAKME" class="footer-logo-img">
+                     <div class="partnership-info">
+                        <span class="partnership-text">Partnered with</span>
+                        <div class="be-beautiful-logo">
+                           <img src="https://cdn.shopify.com/s/files/1/0014/3514/0183/files/logo-footer.svg?v=1751020720" alt="Be Beautiful" class="be-beautiful-img" style="height:32px;">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Footer Links Grid -->
+               <div class="row g-4 mb-5">
+                  <!-- Orders Column -->
+                  <div class="col-lg-2 col-md-6">
+                     <div class="footer-column">
+                        <h5 class="footer-heading">ORDERS</h5>
+                        <ul class="footer-links">
+                           <li><a href="#" class="footer-link">Track Order</a></li>
+                           <li><a href="#" class="footer-link">Cancel Order</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- Help Column -->
+                  <div class="col-lg-2 col-md-6">
+                     <div class="footer-column">
+                        <h5 class="footer-heading">HELP</h5>
+                        <ul class="footer-links">
+                           <li><a href="#" class="footer-link">FAQ</a></li>
+                           <li><a href="#" class="footer-link">Contact Us</a></li>
+                           <li><a href="#" class="footer-link">Terms & Conditions</a></li>
+                           <li><a href="#" class="footer-link">Privacy Notice</a></li>
+                           <li><a href="#" class="footer-link">Cookie Notice</a></li>
+                           <li><a href="#" class="footer-link">Accessibility</a></li>
+                           <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                           <li><a href="#" class="footer-link">Cancellation Refunds</a></li>
+                           <li><a href="#" class="footer-link">Shipping Delivery</a></li>
+                           <li><a href="#" class="footer-link">Kringle T&Cs</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- Contact Us Column -->
+                  <div class="col-lg-2 col-md-6">
+                     <div class="footer-column">
+                        <h5 class="footer-heading">CONTACT US</h5>
+                        <div class="contact-info">
+                           <div class="contact-item">
+                              <a href="mailto:support@lakmeindia.com" class="footer-link contact-link">
+                              <i class="bi bi-envelope me-2"></i>
+                              support@lakmeindia.com
+                              </a>
+                           </div>
+                           <div class="contact-item">
+                              <a href="tel:18002024949" class="footer-link contact-link">
+                              <i class="bi bi-telephone me-2"></i>
+                              1800 202 4949
+                              </a>
+                           </div>
+                           <div class="contact-hours">
+                              <span class="hours-text">Mon - Sun, 9 am to 6 pm</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Account Column -->
+                  <div class="col-lg-2 col-md-6">
+                     <div class="footer-column">
+                        <h5 class="footer-heading">ACCOUNT</h5>
+                        <ul class="footer-links">
+                           <li><a href="#" class="footer-link">Account</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- Newsletter Column -->
+                  <div class="col-lg-4 col-md-12">
+                     <div class="footer-column newsletter-column">
+                        <h5 class="footer-heading">FOLLOW LATEST UPDATES & NEW LAUNCHES</h5>
+                        <div class="newsletter-signup">
+                           <h6 class="signup-title">Sign Up for Lakme Emails</h6>
+                           <form class="newsletter-form">
+                              <div class="input-group">
+                                 <input type="email" class="form-control newsletter-input" 
+                                    placeholder="Enter your email address" required>
+                                 <button class="btn newsletter-btn" type="submit">SUBSCRIBE</button>
+                              </div>
+                           </form>
+                           <div class="newsletter-consent">
+                              <div class="form-check">
+                                 <input class="form-check-input" type="checkbox" id="marketingConsent" required>
+                                 <label class="form-check-label consent-text" for="marketingConsent">
+                                 I agree to receiving marketing communications from the Trusted Unilever Brands.
+                                 By proceeding, I agree to the <a href="#" class="consent-link">HUL T&C & Privacy Notice</a>.
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- About Lakme Section -->
+               <div class="about-lakme-section text-center mb-4">
+                  <button class="about-toggle-btn" type="button" data-bs-toggle="collapse" 
+                     data-bs-target="#aboutLakme" aria-expanded="false" aria-controls="aboutLakme">
+                  <span class="about-divider"></span>
+                  <span class="about-text">ABOUT LAKMÉ</span>
+                  <span class="about-divider"></span>
+                  <i class="bi bi-chevron-down about-arrow"></i>
+                  </button>
+                  <div class="collapse" id="aboutLakme">
+                     <div class="about-content mt-3">
+                        <p class="about-description">
+                           Lakmé is India's leading beauty brand, offering a wide range of cosmetics and beauty products. 
+                           From foundations and lipsticks to skincare and nail care, Lakmé has been empowering Indian women 
+                           to express their unique style and beauty for decades.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <!-- Social Media Links -->
+               <div class="social-media text-center mb-4">
+                  <div class="social-links">
+                     <a href="#" class="social-link" aria-label="Facebook">
+                     <i class="bi bi-facebook"></i>
+                     </a>
+                     <a href="#" class="social-link" aria-label="Instagram">
+                     <i class="bi bi-instagram"></i>
+                     </a>
+                     <a href="#" class="social-link" aria-label="YouTube">
+                     <i class="bi bi-youtube"></i>
+                     </a>
+                     <a href="#" class="social-link" aria-label="Twitter">
+                     <i class="bi bi-twitter"></i>
+                     </a>
+                  </div>
+               </div>
+               <!-- Copyright -->
+               <div class="footer-copyright text-center">
+                  <p class="copyright-text">Copyright © Made By Leet</p>
+               </div>
+            </div>
+         </div>
+      </footer>
+        <div class="sticky-wishlist-btn">
+        <div class="wishlist-tab">
+            <div class="wishlist-icon">
+                <i class="fas fa-heart"></i>
+            </div>
+        </div>
+    </div>
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Custom JavaScript -->
+      <script>
+         // Tab functionality for Try Before You Buy section
+         document.addEventListener('DOMContentLoaded', function() {
+             const tryTabs = document.querySelectorAll('.try-tab-btn');
+             
+             tryTabs.forEach(tab => {
+                 tab.addEventListener('click', function() {
+                     // Remove active class from all tabs
+                     tryTabs.forEach(t => t.classList.remove('active'));
+                     // Add active class to clicked tab
+                     this.classList.add('active');
+                 });
+             });
+         
+             // Newsletter form submission
+             const newsletterForm = document.querySelector('.newsletter-form');
+             if (newsletterForm) {
+                 newsletterForm.addEventListener('submit', function(e) {
+                     e.preventDefault();
+                     const email = this.querySelector('.newsletter-input').value;
+                     const consent = document.getElementById('marketingConsent').checked;
+                     
+                     if (email && consent) {
+                         alert('Thank you for subscribing to Lakme updates!');
+                         this.reset();
+                         document.getElementById('marketingConsent').checked = false;
+                     } else if (!consent) {
+                         alert('Please agree to the terms and conditions to subscribe.');
+                     }
+                 });
+             }
+         
+             // About Lakme toggle functionality
+             const aboutToggle = document.querySelector('.about-toggle-btn');
+             const aboutCollapse = document.getElementById('aboutLakme');
+             
+             if (aboutToggle && aboutCollapse) {
+                 aboutCollapse.addEventListener('shown.bs.collapse', function() {
+                     aboutToggle.querySelector('.about-arrow').style.transform = 'rotate(180deg)';
+                 });
+                 
+                 aboutCollapse.addEventListener('hidden.bs.collapse', function() {
+                     aboutToggle.querySelector('.about-arrow').style.transform = 'rotate(0deg)';
+                 });
+             }
+         });
+      </script>
+   </body>
+</html>
